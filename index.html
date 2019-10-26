@@ -14,55 +14,71 @@
 
 
 <div class="row justify-content-md-center">
-    <div class="col-lg-6">
-        <h1 id="title" class="text-center mt-2 card-panel teal lighten-4 red-text text-accent-4 rounded-pill z-depth-2">Word World!</h1>
+    <div class="col-lg-8">
+        <h1 id="title" class="text-center mt-2 card-panel amber lighten-1 rounded-pill z-depth-2  ">Word World!</h1>
         <div class="row">
-            <div class="input-field col s6">
-                <input value="" id="word-search" type="text" class="">
-                <label class="active" for="first_name2">What word do wanna learn about?</label>
+            <div class="input-field col s6 text-center">
+                <input value="" id="word-search" type="text" class="text-center">
+                <label class="active black-text" for="first_name2">What word do wanna learn about?</label>
+                <button class="btn text-center z-depth-2 amber lighten-1 black-text" id="search-button">Search</button>
             </div>
         </div>
     </div>
 </div>
 
+<div class="container" id="search-content">
+
 <!--Word container-->
-<div class="container">
+
     <div class="row">
-        <div class="col-lg-12">
-            <h1 id="word-text" class="text-center card-panel red accent-4 rounded-pill">Trombone</h1>
+        <div class="col s6">
+            <h1 id="word-text" class="text-center card-panel amber lighten-2 rounded-pill z-depth-2">Trombone</h1>
         </div>
     </div>
 
-</div>
 
-<div class="contan"></div>
 
+    <div class="row">
+        <div class="col s6">
+            <div id="definition" class="card-panel amber lighten-4 z-depth-2">
+                <h2 id="definition-text" class="content-text mt-1 text-center">Definition</h2><hr>
+            </div>
+        </div>
+
+        <div class="col s6">
+            <div id="origin" class="card-panel amber lighten-4 z-depth-2">
+                <h2 id="origin-text" class="content-text mt-1 text-center">Origin</h2><hr>
+                
+            </div>
+        </div>
+    
+    </div>
 
 
 <!--Synonyms/Antonyms container-->
-<div class="container">
+
     <div class="row">
-        <div class="col-lg-6">
-            <div id="synonyms" class="container float-left card-panel teal lighten-4">
-                <h2 id="synonym-text" class="mt-1 text-center">Synonyms</h2><hr>
+        <div class="col s6">
+            <div id="synonyms" class="card-panel amber lighten-4 z-depth-2">
+                <h2 id="synonym-text" class="content-text mt-1 text-center">Synonyms</h2><hr>
             </div>
         </div>
 
-        <div class="col-lg-6">
-                <div id="antonyms" class="container  float-right card-panel teal lighten-4">
-                    <h2 id="synonym-text" class="mt-1 text-center">Antonyms</h2><hr>
-                </div>
+        <div class="col s6">
+            <div id="antonyms" class="card-panel amber lighten-4 z-depth-2">
+                <h2 id="antonym-text" class="content-text mt-1 text-center">Antonyms</h2><hr>
+                
+            </div>
         </div>
-    
     
     </div>
 
 
+
+
+
+
 </div>
-
-
-
-
 
 </body>
 </html>
