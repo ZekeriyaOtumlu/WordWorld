@@ -1,24 +1,26 @@
 $(document).ready(function(){
 
-$("#search-content").hide();
+// $("#search-content").hide();
 var APIKey = "ae2b16a8-cb46-4eb5-9ede-3215ef2cb615";
-var queryURLDictionary = "https://www.dictionaryapi.com/api/v3/references/collegiate/json/" + userInput + "?key=" +APIKey;
 var userInput;
 
 function clickedSearchBtn(event){
-    $(".btn").on("click", function(){
+  $(".btn").on("click", function(){
+    $("#word-text").addClass("scale-in");
     // event.preventDefault();
-      console.log("working");
+    console.log("working");
     $("#search-content").show();
     userInput = $("#word-search").val().trim();
     // $("#word-text").text(userInput);  
     // $("#word-text").append(userInput);  
     console.log(userInput);
-
+    
+    var queryURLDictionary = "https://www.dictionaryapi.com/api/v3/references/collegiate/json/"+ userInput+ "?key=" +APIKey;
     $.ajax({
         url: queryURLDictionary,
         method:"GET"
     }).then(function(response){
+      console.log(queryURLDictionary);
       console.log(response);
     });
  for (var i =0; i<10; i++){
