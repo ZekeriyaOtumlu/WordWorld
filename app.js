@@ -5,7 +5,7 @@ var APIKeyDef = "ae2b16a8-cb46-4eb5-9ede-3215ef2cb615";
 var userInput;
 
 function clickedSearchBtn(event){
-  $(".btn").on("click", function(){
+  $("#search-button").on("click", function(){
     $("#word-text").addClass("scale-in");
     // event.preventDefault();
     console.log("working");
