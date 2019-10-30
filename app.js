@@ -31,17 +31,20 @@ function clickedSearchBtn(event){
   }).then(function(response){
     console.log(queryURLThesaurus);
     console.log(response);
-    for(var i =0; i<response[0].shortdef[0].length; i++){
+    var result = "";
+    for(var i =0; i<response[0].shortdef.length; i++){
       // var definition = response[0].shortdef[i];
-      $("#definition-text").append(response[0].shortdef[i]);
+      result += "-" + response[0].shortdef[i] +"";
+      $("#definition-content").append(result+"<br>");
     }
+
   });
 
    
    
   // for (var i =0; response[0].)
-  //   var type = reponse[0].def[i].fl;
-  //   var synonmys = response[0].meta.syns[];
+  //   var type = reponse[0].def.fl;
+  //   var synonmys = response[0].meta.syns[i];
     // var antonyms = reponse.
    
     $("#word-text").text(userInput); 
