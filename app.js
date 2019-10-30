@@ -31,23 +31,26 @@ function clickedSearchBtn(event){
   }).then(function(response){
     console.log(queryURLThesaurus);
     console.log(response);
+    for(var i =0; i<response[0].shortdef[0].length; i++){
+      // var definition = response[0].shortdef[i];
+      $("#definition-text").append(response[0].shortdef[i]);
+    }
   });
- for (var i =0; i<10; i++){
 
-
-    // var definition = response.
-    // var origin = reponse.
-    // var synonmys = response.
+   
+   
+  // for (var i =0; response[0].)
+  //   var type = reponse[0].def[i].fl;
+  //   var synonmys = response[0].meta.syns[];
     // var antonyms = reponse.
+   
     $("#word-text").text(userInput); 
     // $("#definition-text").append(definition);
     // $("#origin-text").append(origin);
     // $("#synonym-text").append(synonyms);
     // $("#antonym-text").append(antonyms);
- }
+ 
   
-     
-
 });  
 }
 
