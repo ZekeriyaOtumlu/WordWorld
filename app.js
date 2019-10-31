@@ -5,7 +5,7 @@ var APIKeyDef = "ae2b16a8-cb46-4eb5-9ede-3215ef2cb615";
 var userInput;
 
 function clickedSearchBtn(event){
-  $(".btn").on("click", function(){
+  $("#search-button").on("click", function(){
     $("#word-text").addClass("scale-in");
     // event.preventDefault();
     console.log("working");
@@ -31,24 +31,25 @@ function clickedSearchBtn(event){
   }).then(function(response){
     console.log(queryURLThesaurus);
     console.log(response);
+    var result = "";
+    for(var i =0; i<response[0].shortdef.length; i++){
+      // var definition = response[0].shortdef[i];
+      result += "-" + response[0].shortdef[i] +"";
+      $("#definition-content").append(result+"<br>");
+    }
+
   });
- for (var i =0; i<10; i++){
 
 
-    
-    // var definition = response.
-    // var origin = reponse.
-    // var synonmys = response.
     // var antonyms = reponse.
+   
     $("#word-text").text(userInput); 
     // $("#definition-text").append(definition);
     // $("#origin-text").append(origin);
     // $("#synonym-text").append(synonyms);
     // $("#antonym-text").append(antonyms);
- }
+ 
   
-     
-
 });  
 }
 
