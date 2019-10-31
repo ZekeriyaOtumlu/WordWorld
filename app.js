@@ -40,11 +40,7 @@ function clickedSearchBtn(event){
 
   });
 
-   
-   
-  // for (var i =0; response[0].)
-  //   var type = reponse[0].def.fl;
-  //   var synonmys = response[0].meta.syns[i];
+
     // var antonyms = reponse.
    
     $("#word-text").text(userInput); 
