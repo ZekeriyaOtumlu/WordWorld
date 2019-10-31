@@ -92,12 +92,38 @@ $(document).ready(function () {
         }
       });
     });
-  }
-
-  // function displayImage(){
 
 
-  // }
+    var APIKeyThesaurus = "2e33d79f-c228-40c0-9dfb-171729314d2a";
+    var queryURLThesaurus = "https://www.dictionaryapi.com/api/v3/references/thesaurus/json/"+userInput+ "?key=" +APIKeyThesaurus;
+    $.ajax({
+      url: queryURLThesaurus,
+      method:"GET"
+  }).then(function(response){
+    console.log(queryURLThesaurus);
+    console.log(response);
+    var result = "";
+    for(var i =0; i<response[0].shortdef.length; i++){
+      // var definition = response[0].shortdef[i];
+      result += "-" + response[0].shortdef[i] +"";
+      $("#definition-content").append(result+"<br>");
+    }
+
+  });
+
+
+    // var antonyms = reponse.
+   
+    $("#word-text").text(userInput); 
+    // $("#definition-text").append(definition);
+    // $("#origin-text").append(origin);
+    // $("#synonym-text").append(synonyms);
+    // $("#antonym-text").append(antonyms);
+ 
+  
+});  
+}
+
 
   clickedSearchBtn();
   // $(document).on("click", ".word-image", displayImage);
