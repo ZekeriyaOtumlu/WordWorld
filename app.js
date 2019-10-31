@@ -26,6 +26,7 @@ function clickedSearchBtn(event){
  for (var i =0; i<10; i++){
 
 
+    
     // var definition = response.
     // var origin = reponse.
     // var synonmys = response.
