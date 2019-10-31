@@ -4,15 +4,20 @@ $(document).ready(function () {
   // var APIKeyDef = "ae2b16a8-cb46-4eb5-9ede-3215ef2cb615";
   var userInput;
 
+   
   function clickedSearchBtn(event) {
     $("#search-button").on("click", function () {
       $("#word-text").addClass("scale-in");
+
+
       userInput = $("#word-search").val().trim();
       // event.preventDefault();
       console.log("working");
       $("#search-content").show();
       console.log(userInput);
       $(".card-content").empty();
+
+      
       // var queryURLDictionary = "https://www.dictionaryapi.com/api/v3/references/collegiate/json/"+ userInput+ "?key=" +APIKeyDef;
       // $.ajax({
       //     url: queryURLDictionary,
@@ -90,6 +95,8 @@ $(document).ready(function () {
     
     
         }
+
+        
       });
     });
 
@@ -121,7 +128,7 @@ $(document).ready(function () {
     // $("#antonym-text").append(antonyms);
  
   
-});  
+
 }
 
 
