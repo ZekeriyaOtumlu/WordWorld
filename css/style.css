@@ -34,3 +34,16 @@
     font-size: 2vw;
     
 }
+
+
+#image-content {
+    padding: 10px;
+}
+
+img {
+    margin-right: 10px;
+}
+
+.word-image{
+    margin-right: 10px;
+}
