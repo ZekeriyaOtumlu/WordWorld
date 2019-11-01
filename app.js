@@ -127,8 +127,6 @@ $(document).ready(function () {
     // $("#synonym-text").append(synonyms);
     // $("#antonym-text").append(antonyms);
  
-  
-
 }
 
 
