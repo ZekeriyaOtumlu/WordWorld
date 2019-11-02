@@ -98,7 +98,7 @@ $(document).ready(function () {
       method: "GET"
     }).then(function (response) {
       var imageURL;
-y
+
       for (var z = 0; z < 3; z++) {
         imageURL = response.hits[z].largeImageURL;
         var wordImageDiv = $("<div>");
