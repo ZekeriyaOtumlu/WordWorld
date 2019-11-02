@@ -12,7 +12,7 @@ $(document).ready(function () {
         setTimeout(function () {
           clearStuff();
           theFunction();
-        }, 1000);
+        }, 1500);
       }
       else {
         theFunction();
